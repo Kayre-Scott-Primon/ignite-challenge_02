@@ -3,6 +3,13 @@ Desafio 02 Ignite - Daily Diet
 
 ![rocketseat](https://www.rocketseat.com.br/assets/logos/rocketseat.svg)
 
+## Projeto
+
+<p align="center">
+    <img src="https://github.com/Kayre-Scott-Primon/ignite-challenge_02/assets/64801417/07d48750-9aa3-4926-9c6e-0cf7cab37f14" alt="Fig_1" height="420" width="840" />
+</p>
+
+
 ## Screenshots
 
 <p align="center">
