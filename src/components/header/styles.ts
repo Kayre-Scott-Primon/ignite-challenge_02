@@ -5,9 +5,10 @@ import { ArrowUpRight, ArrowLeft } from "phosphor-react-native"
 export const Container = styled.View`
     background-color: ${({theme}) => (theme.COLORS.WHITE)};
     justify-content: space-between;
+    align-self: center;
     flex-direction: row;
-    padding: 24px;
-    width: 100%;
+    width: 90%;
+    margin-top: 15px;
 `
 
 export const Logo = styled.Image`

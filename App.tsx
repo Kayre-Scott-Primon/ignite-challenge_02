@@ -11,8 +11,8 @@ export default function App() {
           barStyle={'dark-content'}
           backgroundColor={'transparent'}
           translucent/>
+        <Routes/>
       </>
-      <Routes/>
     </ThemeProvider>
   );
 }
