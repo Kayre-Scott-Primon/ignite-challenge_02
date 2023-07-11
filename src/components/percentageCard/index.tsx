@@ -10,7 +10,7 @@ import {
 
 export function PercentageCard(){ 
 
-    const expand = true;
+    const expand = false;
 
     return (
         <>

@@ -19,13 +19,15 @@ export default {
       GRAY_7: '#FAFAFA'
     },
     FONT_FAMILY: {
-      REGULAR: 'Roboto_400Regular',
-      BOLD: 'Roboto_700Bold'
+      REGULAR: 'Nunito_400Regular',
+      BOLD: 'Nunito_700Bold'
     },
     FONT_SIZE: {
+      XSM: 12,
       SM: 14,
       MD: 16,
       LG: 18,
-      XL: 24
+      XL: 24,
+      XXL: 32
     }
   };
