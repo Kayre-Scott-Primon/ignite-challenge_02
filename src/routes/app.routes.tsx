@@ -1,3 +1,4 @@
+import NewMeal from '@components/newMeal'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '@screens/home'
 import PageMeal from '@screens/pageMeal'

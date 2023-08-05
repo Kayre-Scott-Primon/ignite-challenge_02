@@ -1,127 +1,80 @@
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Trash } from "phosphor-react-native";
 import styled from "styled-components/native";
 
 export const Container = styled(SafeAreaView)`
     background-color: ${({theme}) => theme.COLORS.WHITE};
-    align-content: center;
-    flex: 1;
+    justify-content: space-between;
+    height: 80%;
 `
-
-export const Header = styled.View`
-    background-color: ${({theme}) => theme.COLORS.GRAY_5};
-    justify-content: center;
-    align-items: center;
-    height: 112px;
+export const InfoContainer = styled.View`
 
 `
-
-export const HeaderLabel = styled.Text`
+export const NameTitle = styled.Text`
     font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
-    font-size: ${({theme}) => theme.FONT_SIZE.XL}px;
+    font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
     color: ${({theme}) => theme.COLORS.GRAY_1};
+    margin-bottom: 5px;
+    margin-top: 20px;
 `
-
-export const Content = styled.View`
-    background-color: ${({theme}) => theme.COLORS.GRAY_5};
-    height: 100%;
-    width: 100%;
+export const NameLabel = styled.Text`
+    font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
+    color: ${({theme}) => theme.COLORS.GRAY_1};
+    font-family: ${({theme}) => theme.FONT_FAMILY.REGULAR};
 `
-
-export const ContentView = styled.View`
-    background-color: ${({theme}) => theme.COLORS.WHITE};
-    border-top-left-radius: 26px;
-    border-top-right-radius: 26px;
-    align-items: center;
-    flex: 1;
-`
-
-export const FormView = styled.View`
-    padding-top: 35px;
-    width: 90%;
-`
-
-export const TitleInput = styled.Text`
+export const MomentTitle = styled.Text`
     font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
     font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
     color: ${({theme}) => theme.COLORS.GRAY_1};
+    margin-bottom: 5px;
+    margin-top: 20px;
 `
-
-export const InputName = styled.TextInput`
-    border-color:  ${({theme}) => theme.COLORS.GRAY_5};
-    border-width: 1px;
-    border-radius: 6px;
-    height: 48px;
-    margin-bottom: 15px;
+export const MomentLabel = styled.Text`
+    font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
+    color: ${({theme}) => theme.COLORS.GRAY_1};
+    font-family: ${({theme}) => theme.FONT_FAMILY.REGULAR};
 `
-
-export const InputDescription = styled.TextInput`
-    border-color:  ${({theme}) => theme.COLORS.GRAY_5};
-    border-width: 1px;
-    border-radius: 6px;
-    height: 120px;
-    margin-bottom: 15px;
-`
-
-export const DateContainer = styled.View`
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-`
-
-export const DateView = styled.View`
-    width: 48%;
-`
-
-export const InputDate = styled.TextInput`
-    border-color:  ${({theme}) => theme.COLORS.GRAY_5};
-    border-width: 1px;
-    border-radius: 6px;
-    height: 48px;
-`
-
-export const InputHour = styled.TextInput`
-    border-color:  ${({theme}) => theme.COLORS.GRAY_5};
-    border-width: 1px;
-    border-radius: 6px;
-    height: 48px;
-`
-
 export const ButtonContainer = styled.View`
 
 `
-
-export const ButtonOptionView = styled.View`
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-`
-
-export const ButtonOption = styled.TouchableOpacity`
-    background-color: ${({theme}) => theme.COLORS.GRAY_6};
-    height: 50px;
-    border-radius: 6px;
+export const ButtonFull = styled.TouchableOpacity.attrs({})`
+    background-color: ${({theme}) => theme.COLORS.GRAY_1};
     justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: row;
     align-items: center;
-    width: 48%;
+    border-radius: 8px;
+    height: 50px;
 `
-
-export const ButtonOptionLabel = styled.Text`
+export const ButtonFullText = styled.Text`
     font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
-    font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
+    font-size: ${({theme}) => theme.FONT_SIZE.LG}px;
+    color: ${({theme}) => theme.COLORS.WHITE};
+`
+export const ButtonFullIcon = styled(Trash).attrs(({theme}) => ({
+    color: theme.COLORS.WHITE,
+    size: 24,
+}))`
+    margin-right: 10px;
+`
+export const ButtonEmpty = styled.TouchableOpacity.attrs({})`
+    background-color: ${({theme}) => theme.COLORS.WHITE};
+    border-color: ${({theme}) => theme.COLORS.GRAY_1};
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border-width: 2px;
+    border-radius: 8px;
+    height: 50px;
+`
+export const ButtonEmptyText = styled.Text`
+    font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
+    font-size: ${({theme}) => theme.FONT_SIZE.LG}px;
     color: ${({theme}) => theme.COLORS.GRAY_1};
 `
-
-export const Button = styled.TouchableOpacity`
-    background-color: ${({theme}) => theme.COLORS.GRAY_2};
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    height: 50px;
-    width: 90%;
-`
-
-export const ButtonLabel = styled.Text`
-    font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
-    font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
-    color: ${({theme}) => theme.COLORS.WHITE};
+export const ButtonEmptyIcon = styled(Trash).attrs(({theme}) => ({
+    color: theme.COLORS.GRAY_1,
+    size: 24,
+}))`
+    margin-right: 10px;
 `

@@ -1,23 +1,28 @@
 import NewMeal from '@components/newMeal'
 import { Container, Content, ContentView, Header, HeaderLabel } from './styles'
 import Meal from '@components/meal';
+import EditMeal from '@components/editMeal';
+
 
 export default function PageMeal() {
 
-    const new_meal = false;
+    const pageState = 'EditMeal';
 
     return (
         <Container>
             <Header>
-                <HeaderLabel>Nova refeição</HeaderLabel>
+                <HeaderLabel>
+                    {pageState == 'Meal' && 'Refeição'}
+                    {pageState == 'NewMeal' && 'Nova refeição'}
+                    {pageState == 'EditMeal' && 'Editar refeição'}
+                </HeaderLabel>
             </Header>
             
             <Content>
                 <ContentView>
-                {new_meal
-                    ?   <NewMeal/>
-                    :   <Meal/>
-                }
+                    { pageState == 'Meal' && <Meal/>}
+                    { pageState == 'NewMeal' && <NewMeal/>}
+                    {pageState == 'EditMeal' && <EditMeal/>}
                 </ContentView>
             </Content>
         </Container>
